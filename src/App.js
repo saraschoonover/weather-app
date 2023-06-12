@@ -1,23 +1,32 @@
-import logo from './logo.svg';
+//import WeatherItem from './components/WeatherItem';
 import './App.css';
+import Weather from './components/Weather';
 
 function App() {
+  const weather = [
+    {
+      city: 'Philadelphia',
+      state: 'Pennsylvania',
+      mood: 'Overcast'
+    },
+    {
+      city: 'Toledo',
+      state: 'Ohio',
+      mood: 'Sunny'
+    },
+    {
+      city: 'Buffalo',
+      state: 'New York',
+      mood: 'Storms'
+    }
+
+  ]
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       <div>
+     <h2>THE WEATHER</h2>
+     </div>
+      <Weather items={weather}/>
     </div>
   );
 }
