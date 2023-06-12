@@ -1,0 +1,12 @@
+.weatherCard {
+
+  padding: 10px;
+  margin: 15px;
+  height: 200px;
+  width: 250px;
+  box-shadow: 0px 0px 5px rgb(230, 230, 230);
+  opacity: 1;
+  display: block;
+    margin-left: auto;
+    margin-right: auto
+}
