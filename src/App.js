@@ -1,6 +1,7 @@
 //import WeatherItem from './components/WeatherItem';
 import './App.css';
 import Weather from './components/Weather';
+import WeatherForm from './components/WeatherForm/WeatherForm';
 
 function App() {
   const weather = [
@@ -27,6 +28,7 @@ function App() {
      <h2>THE WEATHER</h2>
      </div>
       <Weather items={weather}/>
+      <WeatherForm/>
     </div>
   );
 }
